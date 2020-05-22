@@ -1,0 +1,20 @@
+$joke_bgr:#F8F8F8;
+.favourite {
+    z-index: 1;
+    flex: none;
+    min-height: 100%;
+    width: 33.3333333%;
+    background: $joke_bgr;
+    &__title {
+        margin: 40px 0 0 40px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #ABABAB;
+    }
+    &__post {
+        margin: 20px 40px 0 40px;
+    }
+}

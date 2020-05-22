@@ -1,0 +1,31 @@
+$joke_bgr:#F8F8F8;
+.categories {
+    display: none;
+    flex-wrap: wrap;
+    &__name {
+        margin: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+        padding: 6px 15px;
+        border: 2px solid $joke_bgr;
+        box-sizing: border-box;
+        border-radius: 6px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ABABAB;
+        cursor: pointer;
+    }
+    &__name_active {
+        background: $joke_bgr;
+        border: 2px solid $joke_bgr;
+        color: #333333;
+    }
+    &_active {
+        display: flex;
+    }
+}

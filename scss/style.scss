@@ -1,0 +1,100 @@
+@import "./block/content.scss",
+"./block/radio.scss",
+"./block/joke-gen.scss",
+"./block/post.scss",
+"./block/categories.scss",
+"./block/favourite.scss",
+"./block/button.scss";
+$joke_bgr:#F8F8F8;
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    min-width: 100%;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .wrapper {
+        display: block;
+        min-height: 100vh;
+    }
+    .content {
+        width: 100%;
+        &__post {
+            margin: 20px 40px;
+        }
+        &__joke-gen {
+            margin-left: 40px;
+        }
+        &__logo {
+            margin-left: 40px;
+        }
+    }
+    .favourite {
+        width: 480px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(480px);
+        transition: transform 1s 0.2s;
+        &__title {
+            display: none;
+        }
+        &-active {
+            display: block;
+            transform: translateX(0);
+            transition: transform 1s 0.2s;
+        }
+        &__post:nth-child(2) {
+            margin-top: 88px;
+        }
+    }
+    .button {
+        display: flex;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .content {
+        min-width: 100%;
+        &__post {
+            margin: 20px 20px;
+        }
+        &__joke-gen {
+            margin: 78px 20px 40px 20px;
+            margin-top: 78px;
+        }
+        &__logo {
+            margin: 0 20px;
+            margin-top: 20px;
+        }
+    }
+    .button {
+        top: 20px;
+    }
+    .post {
+        &__content {
+            margin: 0 20px;
+        }
+        &__heart {
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+    }
+    .favourite {
+        width: 100%;
+        transform: translate(100%);
+        &__post:nth-child(2) {
+            margin-top: 88px;
+        }
+        &-active {
+            display: block;
+            transform: translateX(0);
+            transition: transform 1s 0.2s;
+        }
+    }
+}

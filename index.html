@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bg"></div>
+        <section class="content">
+            <h2 class="content__logo">MSI 2020</h2>
+
+            <div class="content__joke-gen joke-gen">
+                <h1 class="joke-gen__title">Hey!</h1>
+                <h2 class="joke-gen__description">Let’s try to find a joke for you:</h2>
+
+                <div class="joke-gen__radio radio">
+                    <label class="radio__name">
+                            <input type="radio" name="type-joke" checked class="radio__input" id="random-joke">
+                            <span class="radio__box"></span>
+                            Random
+                        </label>
+
+                    <label class="radio__name">
+                            <input type="radio" name="type-joke"  class="radio__input" id="ctg-joke">
+                            <span class="radio__box"></span>
+                            From categories
+                        </label>
+                    <div class="joke-gen__categories categories">
+                        <p class="categories__name">animal</p>
+                        <p class="categories__name">career</p>
+                        <p class="categories__name">celebrity</p>
+                        <p class="categories__name">dev</p>
+                    </div>
+
+                    <label class="radio__name">
+                            <input type="radio" name="type-joke" class="radio__input" id="search-joke">
+                            <span class="radio__box"></span>
+                            Search
+                        </label>
+                    <input type="text" class="joke-gen__search" placeholder="Free text search...">
+                    <p class="joke-gen__error-value">Please enter at least 3 values</p>
+                </div>
+                <input type="button" class="joke-gen__button" value="Get a joke">
+            </div>
+            <div class="content__tape"></div>
+        </section>
+        <div class="button">
+            <div class="button__ellipse">
+                <div class="button__burger"></div>
+            </div>
+            <p class="button__favourite">Favourite</p>
+        </div>
+        <section class="favourite">
+            <h1 class="favourite__title">Favourite</h1>
+        </section>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

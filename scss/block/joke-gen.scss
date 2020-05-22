@@ -1,0 +1,73 @@
+$joke_bgr:#F8F8F8;
+.joke-gen {
+    &__title {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 44px;
+    }
+    &__description {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 44px;
+        color: #333333;
+    }
+    &__radio {
+        margin-top: 46px;
+    }
+    &__button {
+        margin-top: 10px;
+        padding: 10px 40px;
+        background: linear-gradient(92.01deg, #8EA7FF 0%, #7291FF 100%);
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        border: 0;
+        color: #FFFFFF;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+        &:active {
+            transition: 0.2s;
+            background: linear-gradient(92.01deg, rgb(103, 136, 255) 0%, #7291FF 100%);
+        }
+    }
+    &__categories {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    &__search {
+        margin: 20px 0;
+        display: none;
+        box-sizing: border-box;
+        width: 100%;
+        border: 2px solid #333333;
+        border-radius: 10px;
+        padding: 10px 15px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #333333;
+        &_active {
+            display: block;
+        }
+    }
+    &__error-value {
+        display: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        margin-left: 17px;
+        color: red;
+        &_active {
+            display: inline;
+        }
+    }
+}
